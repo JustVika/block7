@@ -1571,14 +1571,6 @@ h6 {
     .tittle {
       height: 56px; } }
 
-@media (min-width: 768px) {
-  .slider-repair__swiper {
-    margin: 0 20px; } }
-
-@media (min-width: 1440px) {
-  .slider-repair__swiper {
-    margin: 0 32px; } }
-
 .slider-repair__wrapper {
   padding: 0;
   height: 205px; }
@@ -1613,15 +1605,7 @@ h6 {
 
 @media (min-width: 768px) {
   .slider-price__container {
-    margin: 0 15px; } }
-
-@media (min-width: 800px) {
-  .slider-price__container {
-    margin: 0 24px; } }
-
-@media (min-width: 1440px) {
-  .slider-price__container {
-    margin: 0 32px; } }
+    margin: 0 5px; } }
 
 .slider-price__tittle-body {
   display: none; }
@@ -1632,7 +1616,7 @@ h6 {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin: 0 15px;
+      margin: 0 30px;
       padding: 0;
       justify-content: space-between; } }
 
@@ -1659,15 +1643,7 @@ h6 {
 
 @media (min-width: 768px) {
   .slider-price__swiper {
-    margin: 0 15px; } }
-
-@media (min-width: 800px) {
-  .slider-price__swiper {
-    margin: 0 24px; } }
-
-@media (min-width: 1440px) {
-  .slider-price__swiper {
-    margin: 0 32px; } }
+    margin: 0 5px; } }
 
 .slider-price__wrapper {
   height: 240px; }
