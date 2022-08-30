@@ -1,0 +1,10 @@
+
+.content {
+    color: $colorTextBasic;
+    position: relative;
+}
+
+@import"content-header.scss";
+@import"content-main-text.scss";
+@import"slider.scss";
+@import"content-footer.scss";

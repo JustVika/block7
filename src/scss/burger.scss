@@ -1,0 +1,61 @@
+.burger {
+    padding: 0;
+    width: $widthButton;
+    height: $heightButton;
+
+    border-radius: 50%;
+    background-color: #FF3E79;
+    position: relative;
+   
+    transition: all 0.5s ease;
+
+    &__line,
+    &::before,
+    &::after {
+        display: block;
+        height: 2.2px;
+        background-color: $colorWhite;
+        margin-left: 11px;
+        transition: all 0.5s ease;
+    }
+
+    &::before {
+        content: "";
+        width: 18px;
+    }
+
+    &__line {
+        width: 10px;
+        margin: 5px 0 5px 11px;
+    }
+
+    &::after {
+        content: "";
+        width: 14px;
+    }
+
+    &.active &__line {
+        transform: scale(0);
+    }
+
+    &.active::before {
+        content: "";
+        width: 21.73px;
+        transform: translate(-2px, 7px) rotate(45deg);
+
+    }
+
+    &.active::after {
+        content: "";
+        width: 21.73px;
+        transform: translate(-2px, -8px) rotate(-45deg);
+
+    }
+
+    @media(min-width:1440px) {
+        &:hover {
+            box-shadow: 0px 0px 11px 0px rgba(255, 62, 121, 0.6);
+            transform: scale(1.1);
+        }
+    }
+}
