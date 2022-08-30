@@ -2,7 +2,10 @@
     margin-left: 16px;
 
     @media(min-width:768px) {
-        margin-left: 5px;
+        margin-left: 24px;
+    }
+    @media(min-width:1440px) {
+        margin-left: 32px;
     }
 }
 
@@ -72,12 +75,19 @@
 
 
 .slider-brand {
+    &__swiper{
+        @media(min-width:768px) {
+           margin-right: 16px;
+        }
+    }
     &__wrapper {
         height: 120px;
 
         @media(min-width:768px) {
+            padding: 0;
             transition: height 1s ease;
             height: 160px;
+           
         }
     }
 
@@ -144,8 +154,12 @@
         @media(min-width:768px) {
             margin: 0 20px;
         }
+        @media(min-width:1440px) {
+            margin: 0 32px;
+        }
     }
     &__wrapper {
+        padding: 0;
         height: 205px;
 
         @media(min-width:768px) {
@@ -192,6 +206,12 @@
     &__container{
         @media(min-width:768px) {
             margin: 0 15px;
+          }
+          @media(min-width:800px) {
+            margin: 0 24px;
+          }
+          @media(min-width:1440px) {
+            margin: 0 32px;
           }
     }
     &__tittle-body{     
@@ -241,6 +261,12 @@
         @media(min-width:768px) {
           margin: 0 15px;
         }
+        @media(min-width:800px) {
+            margin: 0 24px;
+          }
+          @media(min-width:1440px) {
+            margin: 0 32px;
+          }
     }
 
     &__wrapper {
