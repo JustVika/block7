@@ -1816,64 +1816,18 @@ h6 {
       margin: 0 32PX; } }
 
 .content-footer__text {
-  padding: 8px 0; }
+  padding: 8px 0;
+  margin: 0; }
   @media (min-width: 768px) {
     .content-footer__text {
       width: 30%; }
+      .content-footer__text > p {
+        margin: 0;
+        padding: 0; }
       .content-footer__text:first-child {
         text-align: start; }
       .content-footer__text:last-child {
         text-align: end; } }
-
-/*
-.content-footer {
-    font-size: 14px;
-    line-height: 16px;
-    text-align: center;
-    color: #7E7E82;
-    mix-blend-mode: normal;
-    opacity: 0.72;
-    margin: 0 16px;
-
-    @media(min-width:768px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        margin: 0 24px;
-    }
-    @media(min-width:1440px) {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        margin: 0 32PX;
-    }
-
-    &::before {
-        content: "";
-        display: block;
-        position: absolute;
-        width: 100%;
-        height: 1px;
-        background: #D9FFF5;
-    }
-
-    &__text {
-        padding: 8px 0;
-
-        @media(min-width:768px) {
-            width: 30%;
-
-            &:first-child {
-                text-align: start;
-            }
-            &:last-child {
-                text-align: end;
-            }
-        }
-    }
-}*/
 
 
 /*# sourceMappingURL=style.css.map*/
