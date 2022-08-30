@@ -1044,7 +1044,7 @@ h6 {
   z-index: 2;
   transform: translate(100%);
   opacity: 0;
-  transition: opacity 2s ease 0s, transform 0s ease 2s;
+  transition: opacity 0.7s ease 0s, transform 0s ease 0.6s;
   overflow-y: auto;
   scrollbar-width: none; }
   .popup::-webkit-scrollbar {
@@ -1053,7 +1053,7 @@ h6 {
   .popup.open {
     opacity: 1;
     transform: translate(0);
-    transition: opacity 2s ease 0s, transform 0s ease 0s; }
+    transition: opacity 0.7s ease 0s, transform 0s ease 0s; }
   .popup__body {
     min-height: 100%;
     display: flex; }
