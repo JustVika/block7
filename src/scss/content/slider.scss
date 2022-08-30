@@ -152,12 +152,7 @@
 
 .slider-repair {
     &__swiper{
-        @media(min-width:768px) {
-            margin: 0 20px;
-        }
-        @media(min-width:1440px) {
-            margin: 0 32px;
-        }
+
     }
     &__wrapper {
         padding: 0;
@@ -206,14 +201,9 @@
 .slider-price {
     &__container{
         @media(min-width:768px) {
-            margin: 0 15px;
+            margin: 0 5px;
           }
-          @media(min-width:800px) {
-            margin: 0 24px;
-          }
-          @media(min-width:1440px) {
-            margin: 0 32px;
-          }
+
     }
     &__tittle-body{     
         display: none;
@@ -223,7 +213,7 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            margin: 0 15px;
+            margin: 0 30px;
             padding: 0;
             justify-content: space-between;
           }
@@ -260,14 +250,8 @@
     }
     &__swiper {
         @media(min-width:768px) {
-          margin: 0 15px;
+          margin: 0 5px;
         }
-        @media(min-width:800px) {
-            margin: 0 24px;
-          }
-          @media(min-width:1440px) {
-            margin: 0 32px;
-          }
     }
 
     &__wrapper {
