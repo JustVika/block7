@@ -1,4 +1,4 @@
-
+console.log('work')
 
 import Swiper from "swiper/swiper-bundle"
 import 'swiper/swiper-bundle.min.css';
