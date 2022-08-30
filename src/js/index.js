@@ -1,7 +1,8 @@
+
+
+import Swiper from "swiper/swiper-bundle"
+import 'swiper/swiper-bundle.min.css';
 import '../scss/style.scss';
-
-import Swiper  from "swiper/swiper-bundle"
-
 
 if (window.innerWidth < 768) {
     const swiper = new Swiper(".slider-brand__swiper", {
@@ -39,7 +40,7 @@ let buttonCall = document.querySelectorAll('.icons__button--img--call')
 
 for (let button of buttonChat) {
 
-    
+
     button.addEventListener('click', () => popUpOpen('.popup-chat'))
 }
 
@@ -54,7 +55,10 @@ function popUpOpen(isPopUp) {
 
     let isAsideOpen = document.body.classList.contains('hide')
     let popUp = document.querySelector(isPopUp)
+    let popUpBody = popUp.querySelector(".popup__body")
 
+    popUpBody.style.marginRight = 0 - parseInt(paddingOffset) + 'px';
+    popUp.style.paddingRight = paddingOffset;
 
     popUp.classList.add('open')
     document.body.classList.add('hide')
@@ -72,10 +76,13 @@ function popUpClose(isAsideOpen, isPopUp) {
     if (!isAsideOpen) {
         document.body.classList.remove('hide')
     }
-    let popUp = document.querySelector(isPopUp)
 
-    
+    let popUp = document.querySelector(isPopUp)
+    let popUpBody = popUp.querySelector(".popup__body")
+
     document.body.style.paddingRight = '0px';
+    
+    popUp.style.paddingRight = '0px';
     popUp.classList.remove('open')
 }
 
