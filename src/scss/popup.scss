@@ -9,7 +9,7 @@
 
     transform: translate(100%);
     opacity: 0;
-    transition: opacity 2s ease 0s, transform 0s ease 2s;
+    transition: opacity 1s ease 0s, transform 0s ease 1s;
 
     overflow-y: auto;
     scrollbar-width: none;
@@ -24,7 +24,7 @@
         
         opacity: 1;
         transform: translate(0);
-        transition: opacity 2s ease 0s, transform 0s ease 0s;
+        transition: opacity 1s ease 0s, transform 0s ease 0s;
     }
 
     &__body {
