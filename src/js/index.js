@@ -5,7 +5,6 @@ import 'swiper/swiper-bundle.min.css';
 import '../scss/style.scss';
 
 
-console.log('hello')
 
 if (window.innerWidth < 768) {
     const swiper = new Swiper(".slider-brand__swiper", {
