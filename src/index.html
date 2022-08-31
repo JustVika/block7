@@ -11,7 +11,7 @@
 
 <body>
   <header class="header  container">
-    <button class="burger button-with-shadow-animate">
+    <button class="burger">
       <span class="burger__line"></span>
     </button>
     <span class="grey-line"></span>
@@ -19,26 +19,26 @@
       <img class="header__logo-img" src="img/logo.svg" alt="">
     </a>
     <div class="header__icons">
-      <div class="icons">
-        <button class="icons__button icons__button--img--call">
+      <div class="main-button">
+        <button class="main-button__button main-button__button--img--call">
         </button>
-        <button class="icons__button icons__button--img--chat">
+        <button class="main-button__button main-button__button--img--chat">
         </button>
-        <button class="icons__button icons__button--img--profile">
+        <button class="main-button__button main-button__button--img--profile">
         </button>
       </div>
       <span class="grey-line"></span>
-      <div class="icons">
-        <button class="icons__button icons__button--img--repair">
+      <div class="main-button">
+        <button class="main-button__button main-button__button--img--repair">
         </button>
-        <button class="icons__button icons__button--img--checkstatus">
+        <button class="main-button__button main-button__button--img--checkstatus">
         </button>
       </div>
     </div>
   </header>
 
   <main class="main">
-    <article class="aside-panel">
+    <aside class="aside-panel">
       <div class="aside-panel__body  container">
         <header class="aside-panel__header">
           <button class="aside-panel__burger burger button-with-shadow-animate">
@@ -47,8 +47,8 @@
           <a class="aside-panel__logo" href="#">
             <img class="aside-panel__logo-img" src="img/logo.svg" alt="Логотип">
           </a>
-          <div class="aside-panel__icons icons">
-            <button class="icons__button icons__button--img--search"></button>
+          <div class="aside-panel__icons main-button">
+            <button class="main-button__button main-button__button--img--search"></button>
           </div>
         </header>
         <nav class="aside-panel__menu menu">
@@ -65,34 +65,35 @@
             <li class="menu__item"><a href="" class="menu__link">Контакты</a></li>
           </ul>
         </nav>
-        <div class="icons">
-          <button class="icons__button icons__button--img--call"></button>
-          <button class="icons__button icons__popup icons__button--img--chat"></button>
-          <button class="icons__button icons__button--img--profile"></button>
-        </div>
-        <a class="aside-panel__mail" href="mailto:mail@cps.com">mail@cps.com</a>
-        <a class="aside-panel__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
-        <ul class="aside-panel__languages languages">
-          <li class="languages__btn languages__btn--selected">RU</li>
-          <li class="languages__btn">EN</li>
-          <li class="languages__btn">CH</li>
-        </ul>
-
+        <footer class="aside-panel__footer">
+          <div class="main-button">
+            <button class="main-button__button main-button__button--img--call"></button>
+            <button class="main-button__button main-button__popup main-button__button--img--chat"></button>
+            <button class="main-button__button main-button__button--img--profile"></button>
+          </div>
+          <a class="aside-panel__mail" href="mailto:mail@cps.com">mail@cps.com</a>
+          <a class="aside-panel__phone" href="tel:8 800 890 8900">8 800 890 8900</a>
+          <ul class="aside-panel__languages languages">
+            <li class="languages__btn languages__btn--selected">RU</li>
+            <li class="languages__btn">EN</li>
+            <li class="languages__btn">CH</li>
+          </ul>
+        </footer>
       </div>
 
-    </article>
+    </aside>
     <div class="content">
       <header class="content-header container">
         <div class="content-header__body-tittle">
           <h1 class="content-header__tittle">Услуги и сервисы</h1>
           <div class="content-header__icons">
-            <div class="icons">
-              <label class="icons__tittle">Оставить заявку
-                <button class="icons__button icons__button--img--repair">
+            <div class="main-button">
+              <label class="main-button__tittle">Оставить заявку
+                <button class="main-button__button main-button__button--img--repair">
                 </button>
               </label>
-              <label class="icons__tittle">Статус ремонта
-                <button class="icons__button icons__button--img--checkstatus">
+              <label class="main-button__tittle">Статус ремонта
+                <button class="main-button__button main-button__button--img--checkstatus">
                 </button>
               </label>
             </div>
@@ -373,22 +374,25 @@
       <footer class="content-footer">
         <div class="content-footer__body">
           <div class="content-footer__text ">
-            <p class="">© 2019 CPS</p>
-            <p class=""> Разработано командой Apesong </p>
+            <div class="">© 2019 CPS</div>
+            <div class=""> Разработано командой Apesong </div>
           </div>
-          <p class="content-footer__text">Политика конфиденциальности </p>
-          <p class="content-footer__text">Информация, размещенная на данной странице, не является публичной
-            офертой </p>
+          <div class="content-footer__text">Политика конфиденциальности </div>
+          <div class="content-footer__text">Информация, размещенная на данной странице, не является публичной
+            офертой </div>
         </div>
       </footer>
     </div>
-    <article class="popup popup-call">
+    <div class="popup popup-call">
       <div class="popup__body">
         <div class="popup__content container">
-          <button class="popup__button-close button-with-shadow-animate"></button>
-          <div class="popup__tittle">Заказать звонок</div>
+          <div class=" main-button"> 
+            <button class=" popup__button-close main-button__button"></button>
+          </div>
+
+          <h2 class="popup__tittle">Заказать звонок</h2>
           <form action="#" method="post" class="popup__form form-popup">
-            <input class="form-popup__element" name="phone" type="text" placeholder="Телефон">
+            <input class="form-popup__element" name="phone" type="tel" placeholder="Телефон">
             <p class="form-popup__text">Нажимая “отправить”, вы даете согласие на <span
                 class="form-popup__allotted-text">обработку персональных данных </span>и
               соглашаетесь с нашей <span class="form-popup__allotted-text">политикой
@@ -398,17 +402,19 @@
           </form>
         </div>
       </div>
-    </article>
-    <article class="popup  popup-chat">
+    </div>
+    <div class="popup  popup-chat">
       <div class="popup__body">
         <div class="popup__content container">
-          <button class="popup__button-close button-with-shadow-animate"></button>
-          <div class="popup__tittle">Обратная связь</div>
+          <div class=" main-button"> 
+            <button class=" popup__button-close main-button__button"></button>
+          </div>
+          <h2 class="popup__tittle">Обратная связь</h2>
           <form action="#" method="post" class="popup__form form-popup">
 
             <input class="form-popup__element" name="name" type="text" placeholder="Имя">
-            <input class="form-popup__element" name="phone" type="text" placeholder="Телефон">
-            <input class="form-popup__element" name="mail" type="text" placeholder="Электронная почта">
+            <input class="form-popup__element" name="phone" type="tel" placeholder="Телефон">
+            <input class="form-popup__element" name="mail" type="email" placeholder="Электронная почта">
 
             <textarea class="form-popup__element" name="message" rows="5" id="" placeholder="Сообщение"></textarea>
 
@@ -421,7 +427,7 @@
           </form>
         </div>
       </div>
-    </article>
+    </div>
   </main>
 
 

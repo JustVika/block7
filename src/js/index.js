@@ -37,8 +37,8 @@ if (window.innerWidth < 768) {
 }
 
 
-let buttonChat = document.querySelectorAll('.icons__button--img--chat')
-let buttonCall = document.querySelectorAll('.icons__button--img--call')
+let buttonChat = document.querySelectorAll('.main-button__button--img--chat')
+let buttonCall = document.querySelectorAll('.main-button__button--img--call')
 
 for (let button of buttonChat) {
 

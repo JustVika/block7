@@ -28,12 +28,12 @@
         align-items: center;
     }
 
-    & .icons:first-child {
+    & .main-button:first-child {
         display: none;
     }
 
     @media (min-width:768px) {
-        & .icons:first-child {
+        & .main-button:first-child {
             display: flex;
         }
 

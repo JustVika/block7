@@ -55,22 +55,14 @@
     }
 
     &__button-close {
-        padding: 0;
         margin-top: 24px;
-        width: $widthButton;
-        height: $heightButton;
-
-        border-radius: 50%;
-        background-color: $colorButton;
-
-
         &::before,
         &::after {
             content: "";
             display: block;
             height: 2px;
             background-color: $colorWhite;
-            margin-left: 9px;
+            margin-left: 3px;
         }
 
         &::before {
@@ -171,6 +163,9 @@
     }
 
     &__button {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         background: $colorButton;
         border-radius: 16px;
         width: 136px;

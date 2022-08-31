@@ -1,4 +1,4 @@
-.icons {
+.main-button {
     display: flex;
 
     &__button {
@@ -35,7 +35,7 @@
         cursor: pointer;
         transition: all 0.3s ease;
 
-        & .icons__button {
+        & .main-button__button {
             margin-left: 8px;
         }
 
